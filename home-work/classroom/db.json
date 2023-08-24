@@ -1,0 +1,11 @@
+{
+  "restaurants": [
+    {
+      "name": "asdasd",
+      "address": "onChange={(e) => setRestaurant({...restaurant, name:e.target.value})}ds",
+      "url": "asda",
+      "rating": 0,
+      "id": 5
+    }
+  ]
+}
