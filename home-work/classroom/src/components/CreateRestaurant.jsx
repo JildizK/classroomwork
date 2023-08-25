@@ -23,15 +23,16 @@ const CreateRestaurant = () => {
  
     return ( 
         <> 
+        <div className="create__res">
             <TextField onChange={(e) => setRestaurant({...restaurant, name:e.target.value})} id="standard-basic" label="Name" variant="standard" /> 
-            <TextField onChange={(e) => setRestaurant({...restaurant, address:e.target.value})} id="standard-basic" label="Image" variant="standard" /> 
-            <TextField onChange={(e) => setRestaurant({...restaurant, url:e.target.value})} id="standard-basic" label="Address" variant="standard" /> 
- 
+            <TextField onChange={(e) => setRestaurant({...restaurant, address:e.target.value})} id="standard-basic" label="Adress" variant="standard" /> 
+            <TextField onChange={(e) => setRestaurant({...restaurant, url:e.target.value})} id="standard-basic" label="image" variant="standard" /> 
             <Stack spacing={2} direction="row"> 
-                <Button variant="outlined" onClick={() => dispatch(createRestaurant(restaurant))}>Create</Button> 
+                <Button variant="outlined" id="a" onClick={() => dispatch(createRestaurant(restaurant))}>Create</Button> 
             </Stack> 
+            </div>
         </> 
     ); 
 }; 
- 
+
 export default CreateRestaurant;

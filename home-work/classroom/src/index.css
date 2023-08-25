@@ -1,3 +1,37 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.calendar {
+    width: 55%;
+    background-color: rgb(196, 196, 196);
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    justify-content: center;
+    border-radius: 7px;
+}
+.day__main{
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    align-items: center;
+    background-color: darkgray;
+    flex-direction: column;
+    margin: 10% auto;
+    border: 1px solid darkgray;
+    border-radius: 7px;
+}
+.create__res{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.cal__day {
+    width: 20%;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    border: 1px solid gray;
+}

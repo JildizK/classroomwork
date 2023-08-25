@@ -16,7 +16,7 @@ const RestaurantsDetails = () => {
   return (
     <>
 {oneRestaurant ? (
-    <div>
+    <div className='day__main'>
         <h3>{oneRestaurant.name}</h3>
         <RestaurantBooking booking={oneRestaurant.booking} /> 
     </div>
