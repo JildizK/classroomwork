@@ -23,6 +23,16 @@ export const getOneRestaurant = createAsyncThunk(
     }
 )
 
+export const createBooking = createAsyncThunk(
+    'restaurants/createBooking',
+    async (bookingObj) => {
+        let res = await axios.get(`${API}/${bookingObj.restaurantId}`)
+        let restaurantObj = res.data
+        restaurantObj.booking.push(bookingObj.obj)
+        await axios.patch(`${API}/${bookingObj.restaurantId}`, restaurantObj)
+    }
+)
+
 const restaurantsSlice = createSlice({
     name: 'restaurants',
     initialState: {
